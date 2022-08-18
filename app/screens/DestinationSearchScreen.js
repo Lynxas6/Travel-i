@@ -28,7 +28,7 @@ export function DestinationSearchScreen({navigation}) {
 
         }}
         query={{
-          key: 'AIzaSyCvJooMGWchZzSpwOU3isxhZpclnpzYKss',
+          key: 'my API',
           language: 'en',
           type: '(cities)'
         }}
@@ -49,14 +49,14 @@ export function DestinationSearchScreen({navigation}) {
               margin:8,
               top:50
               }} 
-              source={{uri: 'https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference='+ item.photo +'&key=AIzaSyCvJooMGWchZzSpwOU3isxhZpclnpzYKss'}} />
+              source={{uri: 'https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference='+ item.photo +'&key=My API'}} />
           )}
           //keyExtractor={item => item}
           horizontal
         />    
       </View>
       {/*<View style={styles.container}>
-        <Image style={{width:'100%',height:'100%', resizeMode:'contain', position:'absolute'}} source={{uri: 'https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference='+ selectedPlace[0].photo +'&key=AIzaSyCvJooMGWchZzSpwOU3isxhZpclnpzYKss'}} />
+        <Image style={{width:'100%',height:'100%', resizeMode:'contain', position:'absolute'}} source={{uri: 'https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference='+ selectedPlace[0].photo +'&key=MyAPI'}} />
       </View>*/}
 
       <Button 
